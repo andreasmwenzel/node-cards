@@ -34,6 +34,29 @@ class Deck {
 	}
 
 	/**
+	 * @type {Card[]}
+	 * @description return the array of cards in the deck
+	 */
+	get showDeck(){
+		return props.get(this).deck;
+	}
+	/**
+	 * @type {Card[]}
+	 * @description return the discard pile card array
+	 */
+	get showDiscard(){
+		return props.get(this).discard;
+	}
+	/**
+	 * @type {Card[]}
+	 * @description return the held cards array
+	 */
+	get showHeld(){
+		return props.get(this).held;
+	}
+
+
+	/**
 	 * @type {number}
 	 * @description The total number of cards belonging to this deck
 	 */
